@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Traditional Arts</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Background video styling */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .box {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            transform-style: preserve-3d;
+            animation: animate 20s linear infinite;
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: perspective(1000px) rotateY(0deg);
+            }
+            100% {
+                transform: perspective(1000px) rotateY(360deg);
+            }
+        }
+
+        .box span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i) * 36deg)) translateZ(450px);
+            -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(4, 4, 4, 0.267));
+        }
+
+        .box span img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+            border-radius: 15px;
+            border: 4px double rgb(0, 0, 0);
+        }
+
+        img:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Background video -->
+    <video autoplay muted loop>
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 3D Rotating Image Gallery -->
+    <div class="box">
+        <span style="--i:1"><img src="images/tr1.jpg"></span>
+        <span style="--i:2"><img src="images/tr2.jpg"></span>
+        <span style="--i:3"><img src="images/tr3.jpg"></span>
+        <span style="--i:4"><img src="images/tr4.jpg"></span>
+        <span style="--i:5"><img src="images/tr5.jpg"></span>
+        <span style="--i:6"><img src="images/tr6.jpg"></span>
+        <span style="--i:7"><img src="images/tr7.jpg"></span>
+        <span style="--i:8"><img src="images/tr8.jpg"></span>
+        <span style="--i:9"><img src="images/tr9.jpg"></span>
+        <span style="--i:10"><img src="images/tr10.jpg"></span>
+    </div>
+    
+</body>
+</html>

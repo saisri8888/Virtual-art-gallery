@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #d0acff 20%, #448ee3 100%);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.swiper{
+    width: 600px;
+    height: 640px;
+    padding: 50px 0;
+    /* background: #dbe344; */
+}
+
+.swiper-slide{
+    position: relative;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.swiper-slide h3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 7px 10px;
+    margin: 0 20px 20px 20px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    word-spacing: -1px;
+    background-color: #ffffff;
+    box-shadow: inset 2px -2px 2px #bfbfbf, inset 3px -3px 3px #808080;
+}
+
+.swiper-slide h3 span{
+    font-size: 1.1rem;
+    color: #1a24b9;
+    font-weight: 900;
+}
+
+.swiper-slide h2{
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin: 0 0 20px 20px;
+}
+
+.swiper-slide:nth-child(1) {
+    background:  url("images/pr1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(2) {
+    background:  url("images/pr2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(3) {
+    background: url("images/pr10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(4) {
+    background:  url("images/pr4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(5) {
+    background:  url("images/pr5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(6) {
+    background:  url("images/pr6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(7) {
+    background:  url("images/pr7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(8) {
+    background:  url("images/pr8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(9) {
+    background:  url("./images/pr9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
